@@ -1,0 +1,45 @@
+# Experiment results, including historical visual results (at any depth).
+output/
+output_visual/
+
+# Video preload caches and other local caches.
+cache/
+video_preload/
+__pycache__/
+.pytest_cache/
+
+# Local backups, diagnostic outputs and schedule previews.
+/schedule_backup/
+/tests/timing_validation/
+/schedule_preview/
+
+# Stimulus videos and object models are distributed separately.
+/video/
+/object/
+
+# Keep only the four current execution schedules and their printable orders.
+# Parent directories must stay visible for these exceptions to work.
+*.xlsx
+!/train_visual/experiment_schedule_seed42_current.xlsx
+!/train_tactile/experiment_schedule_seed42_current.xlsx
+!/test_visual/experiment_schedule_seed42_current.xlsx
+!/test_tactile/experiment_schedule_seed42_current.xlsx
+!/train_visual/printable_run_order_seed42.xlsx
+!/train_tactile/printable_run_order_seed42.xlsx
+!/test_visual/printable_run_order_seed42.xlsx
+!/test_tactile/printable_run_order_seed42.xlsx
+
+# Local dependencies and environments.
+node_modules/
+.venv/
+venv/
+
+# Editor, Python, MATLAB and operating-system temporary files.
+*.py[cod]
+*.asv
+*.m~
+*.log
+~$*
+.DS_Store
+Thumbs.db
+Desktop.ini

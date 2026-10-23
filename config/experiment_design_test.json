@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "dataset": "test",
+  "numbering_scheme": "sequential",
+  "objects_per_session": 30,
+  "runs_per_session": 4,
+  "base_trials_per_run": 30,
+  "nback_targets_per_run": 3,
+  "min_nback_target_gap": 8,
+  "plate_rows": 5,
+  "plate_cols": 6,
+  "run_orders": [
+    "ascending",
+    "descending",
+    "column_major",
+    "reverse_column_major"
+  ],
+  "video_root": "../video/test",
+  "trigger_keys": [
+    "s",
+    "S",
+    "5%",
+    "5",
+    "t",
+    "T"
+  ],
+  "timing": {
+    "delivery_s": 0,
+    "prepare_s": 2,
+    "touch_s": 6,
+    "hold_s": 2,
+    "video_s": 6,
+    "post_video_hold_s": 2,
+    "response_s": 2,
+    "initial_dummy_s": 6,
+    "final_rest_s": 6,
+    "iti_options_s": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "iti_mean_per_run_s": 4
+  },
+  "schedule_filename": "experiment_schedule_seed42_current.xlsx"
+}
